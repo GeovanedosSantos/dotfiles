@@ -188,7 +188,7 @@ for_window [class="^steam$"] floating enable
 for_window [class="^discord$"] floating enable
 for_window [app_id="^org.gnome.Calculator$"] floating enable
 for_window [class="^Deezer$"] floating enable
-
+for_window [app_id="^org.gnome.SimpleScan$"] floating enable
 # Layout Teclado e config mouse
 
 input "type:keyboard" {
