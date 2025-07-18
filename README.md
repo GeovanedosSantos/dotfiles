@@ -1,2 +1,2 @@
 # dotfiles
-Backup dos meus arquivos de configuração
+Arquivos de Figuração Sway, waybar e outros programas 
