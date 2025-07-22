@@ -143,7 +143,7 @@ static const enum libinput_config_tap_button_map button_map = LIBINPUT_CONFIG_TA
 /* commands */
 static const char *termcmd[] = { "alacritty", NULL };
 static const char *menucmd[] = { "j4-dmenu-desktop","--dmenu=wmenu -i", NULL };
-static const char *dmenucmd[] = { "wmenu","-l","10", NULL };
+static const char *dmenucmd[] = { "wmenu","-i","-l","5", NULL };
 static const char *raisevolume[] = {"pactl","set-sink-volume","@DEFAULT_SINK@","+5%", NULL};
 static const char *lowervolume[] = {"pactl","set-sink-volume","@DEFAULT_SINK@","-5%", NULL};
 static const char *mutevolume[] = {"pactl","set-sink-mute","@DEFAULT_SINK@","toggle", NULL};
