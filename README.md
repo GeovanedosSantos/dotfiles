@@ -6,3 +6,5 @@ Arquivos de configuração:
 - alacritty
 - picom
 - scripts
+- bash
+- vim

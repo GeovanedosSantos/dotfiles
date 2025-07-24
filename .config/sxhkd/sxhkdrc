@@ -127,3 +127,22 @@ Print
 # Power menu
 super + shift + p
     /home/geovane/scripts/powermenu.sh
+
+# Media Keys
+XF86AudioMute
+    pactl set-sink-mute \@DEFAULT_SINK@ toggle
+
+XF86AudioLowerVolume
+    pactl set-sink-volume \@DEFAULT_SINK@ -5%
+
+XF86AudioRaiseVolume
+    pactl set-sink-volume \@DEFAULT_SINK@ +5%
+
+XF86AudioMicMute
+    pactl set-source-mute \@DEFAULT_SOURCE@ toggle
+
+XF86MonBrightnessDown
+    brightnessctl set 5%-
+
+XF86MonBrightnessUp
+    brightnessctl set 5%+
