@@ -1,2 +1,8 @@
 # dotfiles
-Arquivos de configuração Sway, waybar e outros programas 
+Arquivos de configuração:
+- bspwm
+- sxhkd
+- polybar
+- alacritty
+- picom
+- scripts
