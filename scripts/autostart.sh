@@ -4,4 +4,7 @@
 dunst &
 xset b off &
 picom --config /home/geovane/.config/picom/picom.conf & 
-feh --bg-scale ~/Imagens/wallpaper.jpg &
+feh --bg-scale ~/Imagens/wallpaper2.jpg &
+xss-lock --transfer-sleep-lock -- i3lock -f -e --nofork &
+nm-applet &
+xsettingsd &

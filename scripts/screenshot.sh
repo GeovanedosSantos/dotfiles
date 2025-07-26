@@ -11,7 +11,7 @@ function screenshot {
     elif [[ $selected = "Área (Salvar)" ]]; then
          scrot "$output" --select --line mode=edge
     elif [[ $selected = "Tela Inteira (Clipboard)" ]]; then
-         scrot -e 'xclip -selection clipboard -t image/png -i $f && rm $f'
+         scrot -d 10 -e 'xclip -selection clipboard -t image/png -i $f && rm $f'
 fi
 }
 
