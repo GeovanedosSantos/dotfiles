@@ -8,3 +8,5 @@ Arquivos de configuração:
 - scripts
 - bash
 - vim
+- Qtile
+- Dunst
