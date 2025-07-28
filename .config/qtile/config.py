@@ -234,7 +234,7 @@ keys.extend (
             Key([mod],"c",lazy.group.next_window(), desc="Cycle through windows"),
             Key([mod,"shift"],"c",lazy.group.prev_window(), desc="Cycle through windows"),
             Key([mod],"p",lazy.spawn("/home/geovane/scripts/powermenu.sh"),desc="PowerMenu"),
-            Key([],"Print",lazy.spawn("/home/geovane/scripts/screenshot.sh"),desc="PrintScreen"),
+            Key([],"Print",lazy.spawn("flameshot gui"),desc="screenshot utility"),
             Key([],"XF86AudioRaiseVolume",lazy.spawn("pactl set-sink-volume \\@DEFAULT_SINK@ +5%"),desc="Aumenta o volume"),
             Key([],"XF86AudioLowerVolume",lazy.spawn("pactl set-sink-volume \\@DEFAULT_SINK@ -5%"),desc="Diminui o volume"),
             Key([],"XF86AudioMute",lazy.spawn("pactl set-sink-mute \\@DEFAULT_SINK@ toggle"),desc="Muta o volume"),
@@ -247,7 +247,7 @@ keys.extend (
 
 groups.append(
         ScratchPad("scratchpad", [
-            DropDown("spotify","com.spotify.Client",width=0.8,height=0.8, x=0.1, y=0.1,opacity=1.0,match=Match(wm_class="Spotify"))
+            DropDown("spotify","spotify",width=0.8,height=0.8, x=0.1, y=0.1,opacity=1.0,match=Match(wm_class="Spotify"))
 
             ]))
 
@@ -264,3 +264,13 @@ def autostart():
     home = os.path.expanduser('~/scripts/autostart.sh')
     subprocess.call(home)
 
+# Window Focus
+
+fix_group_apps_wm_class = ["steam","obs","discord"]
+
+@hook.subscribe.client_new
+def fix_group(window):
+    if any(app in window.get_wm_class() for app in fix_group_apps_wm_class):
+        group = qtile.current_group
+        if window.group != group:
+            window.togroup(group.name)
