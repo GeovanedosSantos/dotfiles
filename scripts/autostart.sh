@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+/usr/bin/lxpolkit &
 dunst &
 xset b off &
 picom --config /home/geovane/.config/picom/picom.conf & 

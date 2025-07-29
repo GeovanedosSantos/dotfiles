@@ -4,9 +4,9 @@ function powermenu {
     option="Desligar\nReiniciar\nSuspender\nBloquear"
     selected=$(echo -e $option | dmenu -i ) || exit 0
     if [[ $selected = "Desligar" ]]; then
-        poweroff
+        systemctl poweroff
     elif [[ $selected = "Reiniciar" ]]; then
-        reboot
+        systemctl reboot
     elif [[ $selected = "Suspender" ]]; then
         systemctl suspend
     elif [[ $selected = "Bloquear" ]]; then

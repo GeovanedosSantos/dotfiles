@@ -120,7 +120,7 @@ for i in groups:
 
 layouts = [
     #layout.Columns(border_focus_stack=["#d75f5f", "#8f3d3d"], border_width=4),
-    layout.Tile(border_focus="#c5b4a4",margin=2,ratio=0.52),
+    layout.Tile(border_focus="#c5b4a4",margin=1,ratio=0.60),
     layout.Max(),
     # Try more layouts by unleashing below layouts.
     # layout.Stack(num_stacks=2),
@@ -240,6 +240,9 @@ keys.extend (
             Key([],"XF86AudioMute",lazy.spawn("pactl set-sink-mute \\@DEFAULT_SINK@ toggle"),desc="Muta o volume"),
             Key([],"XF86MonBrightnessUp",lazy.spawn("brightnessctl set 5%+"),desc="Aumenta o Brilho"),
             Key([],"XF86MonBrightnessDown",lazy.spawn("brightnessctl set 5%-"),desc="Diminui o Brilho"),
+            Key([mod], "r", lazy.layout.increase_ratio(),desc="Aumenta o Ratio"),
+            Key([mod, "shift",],"r", lazy.layout.decrease_ratio(),desc="Diminui o Ratio"),
+            Key([mod], "b", lazy.hide_show_bar(position="top"))
             ]
         )
 
