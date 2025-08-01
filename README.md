@@ -1,9 +1,8 @@
 # dotfiles
 Arquivos de configuração:
-- alacritty
-- picom
+- niri
+- mako
+- waybar
 - scripts
 - bash
 - vim
-- qtile 0.31.1
-- Dunst
