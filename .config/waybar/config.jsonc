@@ -2,6 +2,7 @@
     "spacing": 0, 
     "modules-left": [
         "niri/workspaces"
+        
     ],
     "modules-center": [
         "niri/window"

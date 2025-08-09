@@ -22,11 +22,11 @@ output "eDP-1" {
 
     transform "normal"
 
-    position x=1280 y=0
+    position x=0 y=0
 }
 
 layout {
-    gaps 4
+    gaps 3
 
     center-focused-column "never"
 
@@ -136,7 +136,7 @@ layout {
 // Aplicações para iniciar com o sistema
 spawn-at-startup "waybar"
 spawn-at-startup "swaybg" "-i" "/home/geovane/Imagens/wallpaper.jpg" 
-spawn-at-startup "/usr/lib/polkit-kde-authentication-agent-1"
+spawn-at-startup "/usr/libexec/kf6/polkit-kde-authentication-agent-1"
 spawn-at-startup "swayidle" "-w" "timeout" "300" "swaylock -f -e" "timeout" "600" "niri msg action power-off-monitors" "before-sleep" "swaylock -f -e"
 
 prefer-no-csd
