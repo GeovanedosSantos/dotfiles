@@ -1,8 +1,9 @@
 {
+    "position": "bottom",
     "spacing": 0, 
     "modules-left": [
         "niri/workspaces"
-        
+             
     ],
     "modules-center": [
         "niri/window"
@@ -67,7 +68,7 @@
         }
     },
     "tray": {
-        "spacing": 10
+        "spacing": 2
     },
     "clock": {
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",

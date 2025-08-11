@@ -26,7 +26,8 @@ output "eDP-1" {
 }
 
 layout {
-    gaps 3
+
+    gaps 2
 
     center-focused-column "never"
 
@@ -42,10 +43,11 @@ layout {
     default-column-width { proportion 0.5; }
     
     focus-ring {
+        
    
         width 2
  
-        active-color "#7fc8ff"
+        active-color "#ffc87f"
 
         // Color of the ring on inactive monitors.
         inactive-color "#505050"
@@ -458,6 +460,7 @@ binds {
 
     Mod+P { spawn "~/scripts/powermenu.sh"; } 
     Mod+B { spawn "killall" "-SIGUSR1" "waybar"; }
+    
 }
 
 // XWayland
