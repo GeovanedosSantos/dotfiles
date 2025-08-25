@@ -1,8 +1,7 @@
 # dotfiles
 Arquivos de configuração:
-- niri
-- mako
-- waybar
-- scripts
+- Awesome
+- alacritty
+- picom
 - bash
 - vim
