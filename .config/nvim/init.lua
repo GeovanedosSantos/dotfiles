@@ -10,5 +10,5 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Keymaps 
-vim.keymap.set("n","<leader>e", ":Ex<CR>", { noremap = true })
-vim.keymap.set("x", "<leader>c" , ':! tr -s " " | column -t -s "|" -o "|"<CR>', { noremap = true })
+vim.keymap.set("n","<leader>ex", ":Ex<CR>", { noremap = true })
+vim.keymap.set("x", "<leader>tf" , ':! tr -s " " | column -t -s "|" -o "|"<CR>', { noremap = true })
