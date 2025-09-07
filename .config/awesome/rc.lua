@@ -336,6 +336,9 @@ globalkeys = gears.table.join(
     awful.key({}, "Print", function ()
         awful.spawn.with_shell("maim -s ~/Imagens/Screenshots/$(date +%s).png")
     end),
+    awful.key({ modkey }, "Print", function ()
+        awful.spawn.with_shell("maim -s | xclip -selection clipboard -t image/png")
+    end),
     -- Multimedia Keys
     awful.key({},"XF86AudioLowerVolume", function ()
         awful.spawn("pactl set-sink-volume @DEFAULT_SINK@ -5%")
