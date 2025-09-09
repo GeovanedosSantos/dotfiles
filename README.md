@@ -1,7 +1,8 @@
 # dotfiles
 Arquivos de configuração:
-- Awesome
-- alacritty
-- picom
-- bash
-- vim
+- Qtile
+- Dunst
+- Alacritty
+- Picom
+- Bash
+- Neovim
