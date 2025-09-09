@@ -1,8 +1,8 @@
 # dotfiles
 Arquivos de configuração:
-- Qtile
-- Dunst
+- Niri
+- Waybar
+- Mako
 - Alacritty
-- Picom
 - Bash
 - Neovim
