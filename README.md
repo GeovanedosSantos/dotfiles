@@ -6,3 +6,6 @@ Arquivos de configuração:
 - Picom
 - Bash
 - Neovim
+- Niri
+- Waybar
+- Mako
