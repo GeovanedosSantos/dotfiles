@@ -2,11 +2,10 @@
     "position": "bottom",
     "spacing": 0, 
     "modules-left": [
-        "sway/workspaces",
-        "sway/scratchpad"
+        "niri/workspaces"
     ],
     "modules-center": [
-        "sway/window"
+        "niri/window"
     ],
     "modules-right": [
         "pulseaudio",
