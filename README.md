@@ -1,6 +1,6 @@
 # dotfiles
 Arquivos de configuração:
-- Niri
+- i3
 - Sway
 - Waybar
 - Mako
