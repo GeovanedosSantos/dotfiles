@@ -270,7 +270,7 @@ spawn-at-startup "waybar"
 spawn-at-startup "mako"
 spawn-at-startup "swaybg" "-i" "/home/geovane/Imagens/wallpaper.jpg"
 spawn-at-startup "swayidle" "-w" "timeout" "300" "swaylock -f -e" "timeout" "600" "niri msg action power-off-monitors" "before-sleep" "swaylock -f -e"
-
+spawn-at-startup "/usr/libexec/kf6/polkit-kde-authentication-agent-1"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"

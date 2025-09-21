@@ -4,7 +4,7 @@ WINIT_X11_SCALE_FACTOR = "1.0"
 
 [font]
 
-normal = { family = "Hack Nerd Font", style = "Regular" } 
-bold = { family = "Hack Nerd Font", style = "Bold" } 
-italic = { family = "Hack Nerd Font", style = "Italic" } 
-bold_italic = { family = "Hack Nerd Font", style = "Bold Italic" } 
+normal = { family = "MesloLGL Nerd Font", style = "Regular" } 
+bold = { family = "MesloLGL Nerd Font", style = "Bold" } 
+italic = { family = "MesloLGL Nerd Font", style = "Italic" } 
+bold_italic = { family = "MesloLGL Nerd Font", style = "Bold Italic" } 
