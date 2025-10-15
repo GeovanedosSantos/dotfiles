@@ -10,6 +10,6 @@ alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
 export PATH="$HOME/.local/bin:$PATH"
-export EDITOR="$HOME/.local/share/bob/nvim-bin/nvim"
+export EDITOR="nvim"
 
-alias  vim="nvim"
+alias vim="nvim"
