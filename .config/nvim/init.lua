@@ -9,6 +9,7 @@ vim.opt.history = 1000
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
--- Keymaps 
-vim.keymap.set("n","<leader>ex", ":Ex<CR>", { noremap = true })
-vim.keymap.set("x", "<leader>tf" , ':! tr -s " " | column -t -s "|" -o "|"<CR>', { noremap = true })
+-- Keymaps
+vim.keymap.set("n", "<leader>ex", ":Ex<CR>", { noremap = true })
+vim.keymap.set("x", "<leader>tf", ':! tr -s " " | column -t -s "|" -o "|"<CR>', { noremap = true })
+vim.keymap.set("n", "<leader>cf", function() vim.lsp.buf.format() end, { noremap = true })

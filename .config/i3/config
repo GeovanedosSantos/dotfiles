@@ -128,6 +128,7 @@ for_window [class="^steam$"] floating enable
 for_window [class="^discord$"] floating enable 
 for_window [class="^simple-scan$"] floating enable border none
 for_window [class="^Spotify$"] floating enable
+for_window [class="^Lutris$"] floating enable
 for_window [window_role="^pop-up$"] floating enable
 
 # Scratchpads 
@@ -141,6 +142,7 @@ bindsym $mod+minus scratchpad show
 exec --no-startup-id "feh --bg-scale ~/Imagens/wallpaper.jpg"
 exec --no-startup-id "/usr/lib/polkit-kde-authentication-agent-1"
 exec --no-startup-id "xset b off"
+exec --no-startup-id "dunst"
 
 # Keybinds
 
